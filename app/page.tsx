@@ -1,15 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import {
-  Sparkles,
-  Star,
-  Zap,
-  Crown,
-  Play,
-  ArrowRight,
-  RotateCcw,
-} from "lucide-react";
+import { Star, Crown, Play, ArrowRight, RotateCcw } from "lucide-react";
 
 const MysticTilesOnboarding = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -35,7 +27,7 @@ const MysticTilesOnboarding = () => {
     ["💎", "🌙", "🔮", "⭐"],
   ];
 
-  const [gameBoard, setGameBoard] = useState(tutorialBoard);
+  const [gameBoard] = useState(tutorialBoard);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -299,7 +291,7 @@ const MysticTilesOnboarding = () => {
       </div>
 
       <div className="bg-gradient-to-r from-yellow-600 to-orange-600 rounded-lg p-4 max-w-xs mx-auto">
-        <div className="text-white font-bold">Today's Reward</div>
+        <div className="text-white font-bold">Today&apos;s Reward</div>
         <div className="text-2xl my-2">🎁</div>
         <div className="text-sm text-yellow-100">100 Coins + Power-up</div>
       </div>
@@ -326,7 +318,7 @@ const MysticTilesOnboarding = () => {
 
       <div className="space-y-4">
         <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-          You're Ready!
+          You&apos;re Ready!
         </h1>
         <p className="text-xl text-gray-300">
           Your mystical journey begins now
